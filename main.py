@@ -1,4 +1,5 @@
 #encode function adds 3 to each character in an 8 number string and returtns resulting string
+from decoder import decode_password
 def encode_password(password):
     encoded = ''
     for i in range(8):
@@ -26,7 +27,8 @@ if __name__  == '__main__':
             print('')
         #outputs encoded and original passwords created in option 1
         if option == 2:
-            print(f'The encoded password is {encoded_password}, and the original password is {original_password}.')
+            decoded_password = decode_password(encoded_password)
+            print(f'The encoded password is {encoded_password}, and the original password is {decoded_password}.')
             print('')
         #exits the loop and ends the program
         if option == 3:
