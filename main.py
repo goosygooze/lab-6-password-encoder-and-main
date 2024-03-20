@@ -1,3 +1,4 @@
+#Berenice Guzman
 #encode function adds 3 to each character in an 8 number string and returtns resulting string
 from decoder import decode_password
 def encode_password(password):
