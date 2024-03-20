@@ -5,5 +5,5 @@
 def decode_password(encoded_password):
     decoded_pass = ''
     for i in encoded_password:
-        decoded_pass += str(int(i) - 3)
-    return int(decoded_pass)
+        decoded_pass += str((int(i) - 3) % 10)
+    return str(decoded_pass)
