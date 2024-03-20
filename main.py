@@ -9,6 +9,7 @@ def encode_password(password):
         encoded = encoded + y
     return encoded
 #main function outputs menu in while loop until user selects option to quit
+#Berenice Guzman
 if __name__  == '__main__':
     user_quit = False
     while user_quit == False:
