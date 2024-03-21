@@ -6,6 +6,7 @@ def encode_password(password):
     for i in range(8):
         y = int(password[i])
         y += 3
+        y %= 10
         y = str(y)
         encoded = encoded + y
     return encoded
